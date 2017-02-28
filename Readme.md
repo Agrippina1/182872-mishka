@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Лариса Лычко](https://up.htmlacademy.ru/adaptive/10/user/182872).
-* Наставник: `Неизвестно`.
+* Наставник: ["Лиза Позднякова"].
 
 ---
 
