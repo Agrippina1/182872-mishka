@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка</title>
+  </head>
+  <body>
+    <header class="page-header  container">
+      <h2 class="visually-hidden">Мишка - вязание на заказ</h2>
+      <nav class="main-nav  main-nav--nojs">
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__items">
+            <li class="main-nav__item  main-nav__item--img">
+              <div class="page-header__logo">
+                <a  href="index.html">
+                  <img src="img/mishka-logo-mobile.png" width="86" height="35" alt="Mishka">
+                </a>
+                <button class="page-header__button  page-header__button--close" type="button">Открыть меню</button>
+              </div>
+            </li>
+            <li class="main-nav__item  main-nav__item--hidden  main-nav__item-catalog">
+              <a href="#">Каталог товаров</a>
+            </li>
+            <li class="main-nav__item  main-nav__item--hidden  main-nav__item--to-order">
+              <a href="#">Вязание на заказ</a>
+            </li>
+            <li class="main-nav__item  main-nav__item--hidden  main-nav__item--search">
+              <form class="main-nav__item-search" action="https://echo.htmlacademy.ru/" method="get">
+                <label class="main-nav__item-search-label" for="search-field"></label>
+                <input class="main-nav__item-search-input" id="search-field" type="search" name="search-name" placeholder="Поиск по сайту">
+              </form>
+            </li>
+            <li class="main-nav__item  main-nav__item--hidden  main-nav__item--basket">
+              <a href="#">Корзина: пока пуста</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <section class="catalog">
+      <div class="catalog__header">
+        <h1 class="catalog__title">Каталог товаров</h1>
+      </div>
+      <div class="catalog__wrapper  container-padding">
+        <article class="catalog__item">
+          <a class="catalog__link"  href="bunny.html">
+            <div class="catalog__img">
+              <img src="img/photo-1-mobile.png" width="260" height="195" alt="Фото зайчика">
+            </div>
+            <div class="catalog__text">
+              <h4>Зайчик-попрыгайчик</h4>
+              <p>Рост 30 см, вес 200 г</p>
+            </div>
+          </a>
+          <div class="catalog__price">
+            <span>1 200 руб.</span>
+            <button class="catalog__basket" type="button">Добавить в корзину</button>
+          </div>
+        </article>
+        <article class="catalog__item">
+          <a class="catalog__link"  href="box-for-linen.html">
+            <div class="catalog__img">
+              <img src="img/photo-2-mobile.png" width="260" height="195" alt="Фото корзинки">
+            </div>
+            <div class="catalog__text">
+              <h4>Корзинка для белья</h4>
+              <p>Диаметр 15 см, высота 10 см</p>
+            </div>
+          </a>
+          <div class="catalog__price">
+            <span>690 руб.</span>
+            <button class="catalog__basket" type="button">Добавить в корзину</button>
+          </div>
+        </article>
+        <article class="catalog__item">
+          <a class="catalog__item  catalog__item--link"  href="box-for-toys">
+            <div class="catalog__img">
+              <img src="img/photo-3-mobile.png" width="260" height="195" alt="Фото корзинки для игрушек">
+            </div>
+            <div class="catalog__text">
+              <h4>Большая корзинка для игрушек</h4>
+              <p>Диаметр 30 см, высота 30 см</p>
+            </div>
+          </a>
+          <div class="catalog__price">
+            <span>1 500 руб.</span>
+            <button class="catalog__basket" type="button">Добавить в корзину</button>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section class="video-overview  container-padding">
+      <h3>Процесс производства</h3>
+      <video controls preload="metadata" width="260" height="150">
+        <source src="http://placehold.it/" type="video/webm">
+      </video>
+      <p>По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том,
+      как появляются наши товары</p>
+      <a class="btn  video-overview__btn" href="#">Сделать заказ</a>
+    </section>
+    <footer class="page-footer container">
+      <div class="page-footer__wrapper">
+        <p class="page-footer__social">
+          <span class="social-links">
+            <a class="social-link  social-link--inst" href="https://www.instagram.com/htmlacadem">Мы в Инстаграмм</a>
+            <a class="social-link  social-link--fb" href="https://www.facebook.com/htmlacadem">Мы в Фейсбуке</a>
+            <a class="social-link  social-link--tw" href="https://www.twitter.com/htmlacadem">Мы в Твиттере</a>
+          </span>
+        </p>
+        <p class="page-footer__copyrigh">
+          <span>Разработано</span>
+          <a href="https://htmlacademy.ru/">
+            <img src="img/htmlacademy-logo.png" width="27" height="34" alt="https://htmlacademy.ru/">
+          </a>
+        </p>
+      </div>
+    </footer>
+    <div class="modal-content">
+      <div class="modal__header">
+        <h2 class="modal__title">Добавить в корзину</h2>
+        <p class="modal__caption">Выберите размер</p>
+      </div>
+      <div class="modal-size">
+        <button class="modal-size__btn" type="button">S</button>
+        <button class="modal-size__btn" type="button">M</button>
+        <button class="modal-size__btn" type="button">L</button>
+      </div>
+      <button class="btn  modal-content__btn">Добавить</button>
+    </div>
+  </body>
+</html>
