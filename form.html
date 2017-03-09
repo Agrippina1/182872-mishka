@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header  container">
@@ -12,7 +13,7 @@
           <ul class="main-nav__items">
             <li class="main-nav__item  main-nav__item--logo">
               <a class="page-header__logo"  href="index.html">
-                <img src="img/mishka-logo-mobile.png" width="86" height="35" alt="Mishka">
+                <img src="img/logo-mobile.svg" width="86" height="35" alt="Mishka">
               </a>
               <button class="page-header__button  page-header__button--close" type="button">Открыть меню</button>
             </li>
@@ -74,37 +75,37 @@
             <input class="form-field__input  form-field__input--name" id="middle-name-field" type="text" name="middle-name" placeholder="Отчество, если желаете">
         </fieldset>
         <fieldset class="form-field-phone">
-            <legend class="form-field__legend">Тел</legend>
+            <legend class="form-field__legend  form-field__legend--phone">Тел</legend>
             <label class="form-field__label  form-field__label--phone" for="tel-field"></label>
             <input class="form-field__input  form-field__input--phone" id="tel-field" type="tel" name="telephone" placeholder="+7 XXX XX XX*">
         </fieldset>
         <fieldset class="form-field-email">
-            <legend class="form-field__legend">E-mail</legend>
+            <legend class="form-field__legend  form-field__legend--email">E-mail</legend>
             <label class="form-field__label  form-field__label--email" for="email-field"></label>
-            <input class="form-field__input  form-field__input--email" id="email-field" type="email" name="email" placeholder="E-mail*">
+            <input class="form-field__input  form-field__input--email" id="email-field" type="email" name="email" placeholder="Ваш E-mail*">
         </fieldset>
         <fieldset class="form-field-additionally">
-            <legend class="form-field__legend">Доп</legend>
+            <legend class="form-field__legend  form-field__legend--add">Доп</legend>
             <label class="form-field__label  form-field__label--add" for="message-field"></label>
             <textarea class="form-field__textarea  form-field__textarea--add" id="message-field" name="message" rows="5" placeholder="Опишите все ваши пожелания к заказу"></textarea>
         </fieldset>
         <small class="form__legend"><sup>*</sup>Поля обязательны для заполнения</small>
-        <button class="btn form-field__btn" type="button">Отправить заказ</button>
+        <button class="btn  form-field__btn" type="button">Отправить заказ</button>
       </form>
     </section>
-    <footer class="page-footer">
-      <div class="page-footer__wrapper">
+    <footer class="page-footer container">
+      <div class="page-footer__wrapper container-padding">
         <p class="page-footer__social">
-          <span class="social-links">
-            <a class="social-link  social-link--inst" href="https://www.instagram.com/htmlacadem">Мы в Инстаграмм</a>
-            <a class="social-link  social-link--fb" href="https://www.facebook.com/htmlacadem">Мы в Фейсбуке</a>
-            <a class="social-link  social-link--tw" href="https://www.twitter.com/htmlacadem">Мы в Твиттере</a>
+          <span class="social__links">
+            <a class="social__link  social__link--inst" href="https://www.instagram.com/htmlacadem">Мы в Инстаграмм</a>
+            <a class="social__link  social__link--fb" href="https://www.facebook.com/htmlacadem">Мы в Фейсбуке</a>
+            <a class="social__link  social__link--tw" href="https://www.twitter.com/htmlacadem">Мы в Твиттере</a>
           </span>
         </p>
         <p class="page-footer__copyright">
           <span>Разработано</span>
           <a href="https://htmlacademy.ru/">
-            <img src="img/logo-academy.svg" width="27" height="34" alt="https://htmlacademy.ru/">
+            <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="https://htmlacademy.ru/">
           </a>
         </p>
       </div>

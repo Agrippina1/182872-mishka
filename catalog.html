@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header  container">
@@ -12,7 +13,7 @@
           <ul class="main-nav__items">
             <li class="main-nav__item  main-nav__item--logo">
               <a class="page-header__logo"  href="index.html">
-                <img src="img/mishka-logo-mobile.png" width="86" height="35" alt="Mishka">
+                <img src="img/logo-mobile.svg" width="86" height="35" alt="Mishka">
               </a>
               <button class="page-header__button  page-header__button--close" type="button">Открыть меню</button>
             </li>
@@ -43,7 +44,7 @@
         <article class="catalog__item">
           <a class="catalog__link"  href="bunny.html">
             <div class="catalog__img">
-              <img src="img/photo-1-mobile.png" width="260" height="195" alt="Фото зайчика">
+              <img src="img/photo-1-mobile@1x.jpg" width="260" height="195" alt="Фото зайчика">
             </div>
             <div class="catalog__text">
               <h4>Зайчик-попрыгайчик</h4>
@@ -58,7 +59,7 @@
         <article class="catalog__item">
           <a class="catalog__link"  href="box-for-linen.html">
             <div class="catalog__img">
-              <img src="img/photo-2-mobile.png" width="260" height="195" alt="Фото корзинки">
+              <img src="img/photo-2-mobile@1x.jpg" width="260" height="195" alt="Фото корзинки">
             </div>
             <div class="catalog__text">
               <h4>Корзинка для белья</h4>
@@ -73,7 +74,7 @@
         <article class="catalog__item">
           <a class="catalog__link  catalog__item--link"  href="box-for-toys">
             <div class="catalog__img">
-              <img src="img/photo-3-mobile.png" width="260" height="195" alt="Фото корзинки для игрушек">
+              <img src="img/photo-3-mobile@1x.jpg" width="260" height="195" alt="Фото корзинки для игрушек">
             </div>
             <div class="catalog__text">
               <h4>Большая корзинка для игрушек</h4>
@@ -87,28 +88,30 @@
         </article>
       </div>
     </section>
-    <section class="video-overview  container-padding">
-      <h3>Процесс производства</h3>
-      <video controls preload="metadata" width="260" height="150">
-        <source src="http://placehold.it/" type="video/webm">
-      </video>
-      <p>По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том,
-      как появляются наши товары</p>
-      <a class="btn  video-overview__btn" href="#">Сделать заказ</a>
+    <section class="video-overview">
+      <div class="video-overview__wrapper  container-padding">
+        <h3 class="video-overview__title">Процесс производства</h3>
+        <video controls preload="metadata" width="260" height="150">
+          <source src="http://placehold.it/" type="video/webm">
+        </video>
+        <p>По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том,
+        как появляются наши товары</p>
+        <a class="btn  video-overview__btn" href="form.html">Сделать заказ</a>
+      </div>
     </section>
     <footer class="page-footer container">
-      <div class="page-footer__wrapper">
+      <div class="page-footer__wrapper container-padding">
         <p class="page-footer__social">
-          <span class="social-links">
-            <a class="social-link  social-link--inst" href="https://www.instagram.com/htmlacadem">Мы в Инстаграмм</a>
-            <a class="social-link  social-link--fb" href="https://www.facebook.com/htmlacadem">Мы в Фейсбуке</a>
-            <a class="social-link  social-link--tw" href="https://www.twitter.com/htmlacadem">Мы в Твиттере</a>
+          <span class="social__links">
+            <a class="social__link  social__link--inst" href="https://www.instagram.com/htmlacadem">Мы в Инстаграмм</a>
+            <a class="social__link  social__link--fb" href="https://www.facebook.com/htmlacadem">Мы в Фейсбуке</a>
+            <a class="social__link  social__link--tw" href="https://www.twitter.com/htmlacadem">Мы в Твиттере</a>
           </span>
         </p>
         <p class="page-footer__copyright">
           <span>Разработано</span>
           <a href="https://htmlacademy.ru/">
-            <img src="img/htmlacademy-logo.png" width="27" height="34" alt="https://htmlacademy.ru/">
+            <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="https://htmlacademy.ru/">
           </a>
         </p>
       </div>
@@ -123,7 +126,7 @@
         <button class="modal-size__btn" type="button">M</button>
         <button class="modal-size__btn" type="button">L</button>
       </div>
-      <button class="btn  modal-content__btn">Добавить</button>
+      <button class="btn  modal__btn">Добавить</button>
     </div>
   </body>
 </html>
