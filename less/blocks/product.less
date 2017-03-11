@@ -56,3 +56,47 @@
   margin-top: 21px;
   margin-bottom: 25px;
 }
+
+
+@media @tablet-widths {
+  .product__header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .product__tab {
+    width: 80px;
+    margin-right: 28px;
+    text-align: center;
+  }
+  .product__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  .product__description {
+    width: 290px;
+    margin: 0;
+  }
+  .product__price {
+    text-align: left;
+    margin-left: 75px;
+  }
+  .product__btn {
+    width: 290px;
+  }
+  .product__price-wrap {
+    margin-top: -120px;
+  }
+}
+
+@media @desktop-widths {
+  .product__header {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+  }
+  .product__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+}
