@@ -3,7 +3,6 @@
   margin: 0 auto;
   @media @tablet-widths {
     width: 768px;
-    margin: 0 auto;
   }
   @media @desktop-widths {
     width: 1150px;
@@ -20,6 +19,13 @@
   @media @desktop-widths {
     width: 1050px;
     padding: 0 50px;
+  }
+}
+.clearfix() {
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
   }
 }
 .paragraph() {

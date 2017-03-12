@@ -21,6 +21,7 @@
   color: #444444;
 }
 .comments__comment {
+  width: 235px;
   margin-bottom: 40px;
 }
 .comments__signature {
@@ -46,12 +47,17 @@
 .comments__button--next {
   margin-right: 0;
 }
+.comments__btn {
+  width: 256px;
+}
 
 @media @tablet-widths {
   .comments {
     background: url("../img/review@1x.jpg") no-repeat;
   }
   .comments__title {
+    font-size: 43px;
+    line-height: 50px;
     padding-top: 70px;
   }
   .comments__comment {
@@ -70,5 +76,30 @@
     top: -386px;
     left: 488px;
     width: 175px;
+  }
+}
+
+@media @desktop-widths {
+  .comments {
+    .container-padding();
+    background: none;
+  }
+  .comments__wrapper {
+    background: url("../img/review@1x.jpg") no-repeat;
+  }
+  .comments__title {
+    font-size: 53px;
+    line-height: 57px;
+    margin-left: 175px;
+  }
+  .comments__items {
+    margin-left: 175px;
+  }
+  .comments__btn {
+    top: -404px;
+    left: 871px;
+  }
+  .comments__button-wrapper {
+    margin-left: 790px;
   }
 }
