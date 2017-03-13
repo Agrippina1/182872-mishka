@@ -1,10 +1,14 @@
 .page-footer {
-  .container();
   background: #f1f1f1;
   margin-top: 40px;
 }
-.page-footer__social {
+.page-footer__logo {
+  display: none;
+}
+.page-footer__wrapper {
   .container-padding();
+}
+.page-footer__social {
   border-bottom: 1px solid #ececec;
   padding-bottom: 30px;
   padding-top: 30px;
@@ -19,4 +23,35 @@
   line-height: 18px;
   color: #000000;
   padding-right: 25px;
+}
+
+@media @tablet-widths {
+  .page-footer__logo {
+    display: block;
+  }
+  .page-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  .social__links {
+    display: flex;
+    justify-content: center;
+  }
+  .page-footer__social {
+    width: 225px;
+  }
+  .social__link {
+    width: 28px;
+    height: 28px;
+    font-size: 0;
+    margin-right: 40px;
+    background: yellow;
+  }
+  .page-footer__copyright {
+    padding-left: 0;
+  }
+}
+
+@media @desktop-widths {
+
 }

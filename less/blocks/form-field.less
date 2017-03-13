@@ -1,7 +1,10 @@
 .form-field {
   .container-padding();
 }
-.form-field__legend {
+.form-field__wrapper {
+  .list();
+}
+.form-field__title {
   .fonts-bold();
   font-size: 17px;
   line-height: 16px;
@@ -90,9 +93,9 @@
   padding-bottom: 18px;
   margin-bottom: 10px;
 }
-.form-field__legend--phone,
-.form-field__legend--email,
-.form-field__legend--add {
+.form-field__title--phone,
+.form-field__title--email,
+.form-field__title--add {
   padding-top: 10px;
   margin-bottom: 10px;
 }
@@ -109,7 +112,7 @@
   margin-top: 15px;
   margin-bottom: 10px;
 }
-.form__legend {
+.form__footnote {
   .fonts-regular();
   font-size: 14px;
   line-height: 16px;
@@ -118,4 +121,53 @@
 .form-field__btn {
   background: #ffffff;
   margin-top: 30px;
+}
+
+@media @tablet-widths {
+  .form-field__container {
+    display: flex;
+  }
+  .form-field__title {
+    width: 70px;
+    margin-right: 40px;
+  }
+  .form-field__wrapper--color {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .form-field__wrapper-item {
+    display: flex;
+    width: 200px;
+  }
+  .form-field__label--name {
+    margin-right: 25px;
+  }
+  .form-field__input--name {
+    width: 500px;
+    padding-top: 11px;
+    padding-left: 15px;
+  }
+  .form-field__textarea {
+    width: 100%;
+  }
+  .form__footnote-btn-wrap {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .form-field__btn {
+    width: 230px;
+    line-height: 16px;
+    margin-top: 0;
+  }
+}
+
+@media @desktop-widths {
+  .form-field__container {
+    margin-bottom: 80px;
+  }
+  .form-field__wrapper-item {
+    width: 235px;
+  }
 }

@@ -3,10 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="page-header  container">
+    <header class="page-header">
       <h1 class="visually-hidden">Мишка - вязание на заказ</h1>
       <nav class="main-nav  main-nav--nojs">
         <div class="main-nav__wrapper">
@@ -17,71 +18,86 @@
               </a>
               <button class="page-header__button  page-header__button--close" type="button">Открыть меню</button>
             </li>
-            <li class="main-nav__item  main-nav__item--hidden  main-nav__item-catalog">
+            <li class="main-nav__item  main-nav__item--catalog">
               <a href="catalog.html">Каталог товаров</a>
             </li>
-            <li class="main-nav__item  main-nav__item--hidden  main-nav__item--to-order">
+            <li class="main-nav__item  main-nav__item--to-order">
               <a href="#">Вязание на заказ</a>
             </li>
-            <li class="main-nav__item  main-nav__item--hidden  main-nav__item--search">
+            <li class="main-nav__item  main-nav__item--search">
               <form class="main-nav__item-search" action="https://echo.htmlacademy.ru/" method="get">
                 <label class="main-nav__item-search-label" for="search-field"></label>
                 <input class="main-nav__item-search-input" id="search-field" type="search" name="search-name" placeholder="Поиск по сайту">
               </form>
             </li>
-            <li class="main-nav__item  main-nav__item--hidden  main-nav__item--basket">
+            <li class="main-nav__item  main-nav__item--basket">
               <a href="#">Корзина: пока пуста</a>
+            </li>
+            <li class="main-nav__item  main-nav__item--hidden  main-nav__item--new-arrivals">
+              <a href="#">Новые поступления</a>
+            </li>
+            <li class="main-nav__item  main-nav__item--hidden  main-nav__item--sale">
+              <a href="#">Распродажа</a>
+            </li>
+            <li class="main-nav__item  main-nav__item--hidden  main-nav__item--info">
+              <span>Бесплатная доставка по России</span>
             </li>
           </ul>
         </div>
       </nav>
     </header>
-    <section class="assortment  container">
+    <section class="assortment">
       <header class="assortment__header">
-        <h2 class="assortment__slogan">Милые штуки &nbsp;ручной&nbsp; работы&nbsp;для&nbsp;дома</h2>
+        <h2 class="assortment__slogan">Милые&nbsp;штуки ручной работы&nbsp;для&nbsp;дома</h2>
       </header>
       <div class="assortment-wrapper">
         <a class="assortment__btn  assortment__btn--left"  href="interiors.html">Предметы интерьера</a>
         <a class="assortment__btn  assortment__btn--right"  href="toys.html">Детские игрушки</a>
       </div>
     </section>
-    <section class="product  container-padding">
+    <section class="product">
       <header class="product__header">
         <h2 class="product__title">Вязаные корзинки</h2>
         <b class="product__tab">Товар недели</b>
       </header>
-      <p class="product__description">Экологически чистая пряжа, ручная работа.
-      Доступны в шести расцветках и трех размерах</p>
-      <table class="product__features">
-        <tr class="product__row">
-          <td class="product__property">Цвет:</td>
-          <td class="product__value">&laquo;Тиффани&raquo;/серый</td>
-        </tr>
-        <tr class="product__row">
-          <td class="product__property">Диаметр:</td>
-          <td class="product__value">25 см</td>
-        </tr>
-        <tr class="product__row">
-          <td class="product__property">Высота:</td>
-          <td class="product__value">15 см</td>
-        </tr>
-      </table>
-      <img class="product__image" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Корзинка">
-      <p class="product__price">Цена: 990 руб.</p>
-      <a class="btn  product__btn" href="form.html">Заказать</a>
+      <div class="product__wrapper">
+        <div class="product__discription-wrapper">
+          <p class="product__description">Экологически чистая пряжа, ручная работа.
+          Доступны в шести расцветках и трех размерах</p>
+          <table class="product__features">
+            <tr class="product__row">
+              <td class="product__property">Цвет:</td>
+              <td class="product__value">&laquo;Тиффани&raquo;/серый</td>
+            </tr>
+            <tr class="product__row">
+              <td class="product__property">Диаметр:</td>
+              <td class="product__value">25 см</td>
+            </tr>
+            <tr class="product__row">
+              <td class="product__property">Высота:</td>
+              <td class="product__value">15 см</td>
+            </tr>
+          </table>
+        </div>
+        <img class="product__image" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Корзинка">
+      </div>
+      <div class="product__price-wrap">
+        <p class="product__price">Цена: 990 руб.</p>
+        <a class="btn  product__btn" href="form.html">Заказать</a>
+      </div>
     </section>
-    <section class="advantages container-padding">
+    <section class="advantages">
       <h2 class="advantages__title">Коротко о нас:</h2>
       <ul class="advantages__items">
-        <li class="advantages__item">Экологически чистые материалы</li>
-        <li class="advantages__item">Скандинавский стиль по российской цене</li>
-        <li class="advantages__item">Увеличивает лайки на фотографиях</li>
-        <li class="advantages__item">Связано вручную с любовью и умилением</li>
-        <li class="advantages__item">Поддержка отечественного производителя</li>
-        <li class="advantages__item">Поставляется в подарочной упаковке</li>
+        <li class="advantages__item  advantages__item--first">Экологически чистые материалы</li>
+        <li class="advantages__item  advantages__item--second">Скандинавский стиль по российской цене</li>
+        <li class="advantages__item  advantages__item--third">Увеличивает лайки на фотографиях</li>
+        <li class="advantages__item  advantages__item--fourth">Связано вручную с любовью и умилением</li>
+        <li class="advantages__item  advantages__item--fifth">Поддержка отечественного производителя</li>
+        <li class="advantages__item  advantages__item--sixth">Поставляется в подарочной упаковке</li>
       </ul>
     </section>
-    <section class="comments  container-padding">
+    <section class="comments">
       <div class="comments__wrapper  slider">
         <h2 class="comments__title">Отзывы</h2>
         <input class="slider__input" id="comments-input-1" type="radio" name="comments" checked>
@@ -107,27 +123,28 @@
         <a class="btn  comments__btn" href="comment.html">Написать</a>
       </div>
     </section>
-    <section class="contacts  container">
-      <div class="contacts__wrapper  container-padding">
+    <section class="contacts">
+      <div class="contacts__wrapper">
         <h2 class="contacts__title">Контакты</h2>
         <p class="contacts__email">
           <span>e-mail:</span>
           <a href="#">info@mimimishkashop.ru</a>
         </p>
         <p class="contacts__address">
-          <span>адрес:</span>
-          <span class="contacts__address--street">г. Санкт-Петербург,<br>ул. Большая Конюшенная,<br>д. 19/8, офис 101</span>
+          <span class="contacts__address-street">адрес:</span>
+          <span class="contacts__address-street">г. Санкт-Петербург,<br>ул. Большая Конюшенная,<br>д. 19/8, офис 101</span>
         </p>
       </div>
       <div class="contacts__map">
-        <img src="img/map-mobile@1x.jpg" width="320" height="457" alt="Карта">
+        <!-- <img src="img/map-mobile@1x.jpg" width="320" height="457" alt="Карта"> -->
       </div>
-      <div class="contacts__btn--wrapper   container-padding">
+      <div class="contacts__btn--wrapper">
         <a class="btn  contacts__btn" href="#">Напишите нам</a>
       </div>
     </section>
-    <footer class="page-footer container">
-      <div class="page-footer__wrapper container-padding">
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <img  class="page-footer__logo"  src="img/logo-footer-tablet.png" width="102" height="34" alt="logo">
         <p class="page-footer__social">
           <span class="social__links">
             <a class="social__link  social__link--inst" href="https://www.instagram.com/htmlacadem">Мы в Инстаграмм</a>

@@ -1,11 +1,32 @@
 .container() {
   width: 320px;
   margin: 0 auto;
+  @media @tablet-widths {
+    width: 768px;
+  }
+  @media @desktop-widths {
+    width: 1150px;
+  }
 }
 .container-padding() {
   width: 260px;
   padding: 0 30px;
   margin: 0 auto;
+  @media @tablet-widths {
+    width: 668px;
+    padding: 0 50px;
+  }
+  @media @desktop-widths {
+    width: 1050px;
+    padding: 0 50px;
+  }
+}
+.clearfix() {
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 }
 .paragraph() {
   padding: 0;

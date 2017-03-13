@@ -1,25 +1,44 @@
 .form__header {
-  .container();
+  background: #f1f1f1;
 }
 .form__title {
-  .paragraph();
+  .container-padding();
   .fonts-bold();
   font-size: 27px;
   line-height: 30px;
   color: #000000;
   text-align: center;
-  background: #f1f1f1;
   padding-top: 75px;
   padding-bottom: 80px;
   margin-bottom: 30px;
 }
 .form__text {
-  .paragraph();
+  .container-padding();
   .fonts-regular();
   font-size: 13px;
   line-height: 24px;
   color: #444444;
-  padding-left: 30px;
-  padding-right: 45px;
   padding-bottom: 30px;
+}
+
+@media @tablet-widths {
+  .form__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+  .form__text {
+    font-size: 17px;
+    line-height: 30px;
+  }
+}
+
+@media @desktop-widths {
+  .form__title {
+    padding-top: 104px;
+    padding-bottom: 104px;
+  }
+  .form__text {
+    padding-left: 225px;
+    margin-bottom: 60px;
+  }
 }
