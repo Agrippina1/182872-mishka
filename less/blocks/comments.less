@@ -38,10 +38,9 @@
 .comments__button {
   display: inline-block;
   vertical-align: top;
-  font-size: 0;
   width: 128px;
   height: 50px;
-  background: #ffffff;
+  background: transparent;
   border: 1px solid #ececec;
 }
 .comments__button--next {
@@ -54,39 +53,42 @@
 @media @tablet-widths {
   .comments {
     background: url("../img/review@1x.jpg") no-repeat;
+    padding-bottom: 70px;
+    margin-bottom: 65px;
   }
   .comments__title {
     font-size: 43px;
     line-height: 50px;
-    padding-top: 70px;
+    margin-top: 70px;
   }
   .comments__comment {
-    width: 593px;
+    width: 500px;
     padding-top: 23px;
   }
-  .comments__button-wrapper {
-    position: relative;
-    top: -80px;
-    right: 0;
-    font-size: 0;
-    margin-left: 412px;
+  .comments__wrapper {
+    .container-padding();
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
   .comments__btn {
-    position: relative;
-    top: -386px;
-    left: 488px;
-    width: 175px;
+    order: 1;
+    width: 177px;
+    margin-top: 70px;
+  }
+  .comments__items {
+    order: 2;
+  }
+  .comments__button-wrapper {
+    order: 3;
+    margin-top: 185px;
+  }
+  .comments__button {
+    width: 82px;
   }
 }
 
 @media @desktop-widths {
-  .comments {
-    .container-padding();
-    background: none;
-  }
-  .comments__wrapper {
-    background: url("../img/review@1x.jpg") no-repeat;
-  }
   .comments__title {
     font-size: 53px;
     line-height: 57px;
@@ -94,12 +96,5 @@
   }
   .comments__items {
     margin-left: 175px;
-  }
-  .comments__btn {
-    top: -404px;
-    left: 871px;
-  }
-  .comments__button-wrapper {
-    margin-left: 790px;
   }
 }
