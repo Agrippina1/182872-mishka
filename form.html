@@ -7,16 +7,16 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="page-header  container">
+    <header class="page-header">
       <h1 class="visually-hidden">Мишка - вязание на заказ</h1>
-      <nav class="main-nav  main-nav--nojs">
+      <nav class="main-nav  main-nav--closed  main-nav--nojs">
         <div class="main-nav__wrapper">
           <ul class="main-nav__items">
-            <li class="main-nav__item  main-nav__item--logo">
+            <li class="main-nav__item  main-nav__item--logo main-nav__item--active">
               <a class="page-header__logo"  href="index.html">
                 <img src="img/logo-mobile.svg" width="86" height="35" alt="Mishka">
+                <button class="main-nav__toggle" type="button">Открыть меню</button>
               </a>
-              <button class="page-header__button  page-header__button--close" type="button">Открыть меню</button>
             </li>
             <li class="main-nav__item  main-nav__item--catalog">
               <a href="catalog.html">Каталог товаров</a>
@@ -51,11 +51,13 @@
         <h2 class="form__title">Вязание на заказ</h2>
       </div>
       <p class="form__text">Мы будем рады воплотить в жизнь ваши пожелания!
-        Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали</p>
+        Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
       <form class="form-field  container-padding" action="https://echo.htmlacademy.ru/" method="get">
         <div class="form-field__container  form-field__container--type">
-          <p class="form-field__title">Тип</p>
-          <ul class="form-field__wrapper">
+          <div class="form-field__title-wrapper  form-field__title-wrapper--type">
+            <p class="form-field__title  form-field__title--type">Тип</p>
+          </div>
+          <ul class="form-field__wrapper  form-field__wrapper--type">
             <li class="form-field__wrapper-item">
               <input class="form-field__input  form-field__input--radio" id="accessorie-field" type="radio" name="button" checked>
               <label class="form-field__label  form-field__label--radio" for="accessorie-field">Аксессуар для интерьера</label>
@@ -67,37 +69,43 @@
           </ul>
         </div>
         <div class="form-field__container  form-field__container--color">
-          <p class="form-field__title">Цвет</p>
-          <ul class="form-field__wrapper  form-field__wrapper--color">
-            <li class="form-field__wrapper-item">
-              <input class="form-field__input  form-field__input--checkbox" id="white-field" type="checkbox" name="white" checked>
-              <label class="form-field__label  form-field__label--checkbox" for="white-field">Белый</label>
-            </li>
-            <li class="form-field__wrapper-item">
-              <input class="form-field__input  form-field__input--checkbox" id="grey-field" type="checkbox" name="grey" checked>
-              <label class="form-field__label  form-field__label--checkbox" for="grey-field">Серый</label>
-            </li>
-            <li class="form-field__wrapper-item">
-              <input class="form-field__input  form-field__input--checkbox" id="tiffany-field" type="checkbox" name="tiffany">
-              <label class="form-field__label  form-field__label--checkbox" for="tiffany-field">&laquo;Тиффани&raquo;</label>
-            </li>
-            <li class="form-field__wrapper-item">
-              <input class="form-field__input  form-field__input--checkbox" id="black-field" type="checkbox" name="black">
-              <label class="form-field__label  form-field__label--checkbox" for="black-field">Черный</label>
-            </li>
-            <li class="form-field__wrapper-item">
-              <input class="form-field__input  form-field__input--checkbox" id="pink-field" type="checkbox" name="pink">
-              <label class="form-field__label  form-field__label--checkbox" for="pink-field">Розовый</label>
-            </li>
-            <li class="form-field__wrapper-item">
-              <input class="form-field__input  form-field__input--checkbox" id="orange-field" type="checkbox" name="orange">
-              <label class="form-field__label  form-field__label--checkbox" for="orange-field">Оранжевый</label>
-            </li>
-          </ul>
+          <div class="form-field__background-wrapper">
+            <div class="form-field__title-wrapper  form-field__title-wrapper--color">
+              <p class="form-field__title">Цвет</p>
+            </div>
+            <ul class="form-field__wrapper  form-field__wrapper--color">
+              <li class="form-field__wrapper-item">
+                <input class="form-field__input  form-field__input--checkbox" id="white-field" type="checkbox" name="white" checked>
+                <label class="form-field__label  form-field__label--checkbox" for="white-field">Белый</label>
+              </li>
+              <li class="form-field__wrapper-item">
+                <input class="form-field__input  form-field__input--checkbox" id="grey-field" type="checkbox" name="grey" checked>
+                <label class="form-field__label  form-field__label--checkbox" for="grey-field">Серый</label>
+              </li>
+              <li class="form-field__wrapper-item">
+                <input class="form-field__input  form-field__input--checkbox" id="tiffany-field" type="checkbox" name="tiffany">
+                <label class="form-field__label  form-field__label--checkbox" for="tiffany-field">&laquo;Тиффани&raquo;</label>
+              </li>
+              <li class="form-field__wrapper-item">
+                <input class="form-field__input  form-field__input--checkbox" id="black-field" type="checkbox" name="black">
+                <label class="form-field__label  form-field__label--checkbox" for="black-field">Черный</label>
+              </li>
+              <li class="form-field__wrapper-item">
+                <input class="form-field__input  form-field__input--checkbox" id="pink-field" type="checkbox" name="pink">
+                <label class="form-field__label  form-field__label--checkbox" for="pink-field">Розовый</label>
+              </li>
+              <li class="form-field__wrapper-item">
+                <input class="form-field__input  form-field__input--checkbox" id="orange-field" type="checkbox" name="orange">
+                <label class="form-field__label  form-field__label--checkbox" for="orange-field">Оранжевый</label>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="form-field__container  form-field__container--name">
-          <p class="form-field__title">ФИО</p>
-          <ul class="form-field__wrapper">
+          <div class="form-field__title-wrapper  form-field__title-wrapper--name">
+            <p class="form-field__title">ФИО</p>
+          </div>
+          <ul class="form-field__wrapper  form-field__wrapper--name">
             <li class="form-field__wrapper-item">
               <label class="form-field__label  form-field__label--name" for="first-name-field">Имя:</label>
               <input class="form-field__input  form-field__input--name" id="first-name-field" type="text" name="first-name" placeholder="Введите ваше имя*">
@@ -113,19 +121,29 @@
           </ul>
         </div>
         <div class="form-field__container  form-field__container--phone">
-            <p class="form-field__title  form-field__title--phone">Тел</p>
+          <div class="form-field__background-wrapper">
+            <div class="form-field__title-wrapper  form-field__title-wrapper--phone">
+              <p class="form-field__title  form-field__title--phone">Тел</p>
+            </div>
             <label class="form-field__label  form-field__label--phone" for="tel-field"></label>
             <input class="form-field__input  form-field__input--phone" id="tel-field" type="tel" name="telephone" placeholder="+7 XXX XX XX*">
+          </div>
         </div>
         <div class="form-field__container  form-field__container--email">
-            <p class="form-field__title  form-field__title--email">E-mail</p>
+          <div class="form-field__background-wrapper">
+            <div class="form-field__title-wrapper  form-field__title-wrapper--email">
+              <p class="form-field__title  form-field__title--email">E-mail</p>
+            </div>
             <label class="form-field__label  form-field__label--email" for="email-field"></label>
             <input class="form-field__input  form-field__input--email" id="email-field" type="email" name="email" placeholder="Ваш E-mail*">
+          </div>
         </div>
         <div class="form-field__container  form-field__container--additionally">
+          <div class="form-field__title-wrapper  form-field__title-wrapper--add">
             <p class="form-field__title  form-field__title--add">Доп</p>
-            <label class="form-field__label  form-field__label--add" for="message-field"></label>
-            <textarea class="form-field__textarea  form-field__textarea--add" id="message-field" name="message" rows="5" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          </div>
+          <label class="form-field__label  form-field__label--add" for="message-field"></label>
+          <textarea class="form-field__textarea  form-field__textarea--add" id="message-field" name="message" rows="5" placeholder="Опишите все ваши пожелания к заказу"></textarea>
         </div>
         <div class="form__footnote-btn-wrap">
           <p class="form__footnote"><sup>*</sup>Поля обязательны для заполнения</p>
@@ -133,8 +151,9 @@
         </div>
       </form>
     </section>
-    <footer class="page-footer container">
-      <div class="page-footer__wrapper container-padding">
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <img  class="page-footer__logo"  src="img/logo-footer-tablet.png" width="102" height="34" alt="logo">
         <p class="page-footer__social">
           <span class="social__links">
             <a class="social__link  social__link--inst" href="https://www.instagram.com/htmlacadem">Мы в Инстаграмм</a>

@@ -1,7 +1,10 @@
 .modal {
   .container-padding();
-  padding-top: 40px;
+  padding-top: 30px;
   padding-bottom: 45px;
+}
+.modal__header {
+  margin-bottom: 21px;
 }
 .modal__title {
   .paragraph();
@@ -9,14 +12,15 @@
   font-size: 25px;
   line-height: 30px;
   color: #000000;
-  padding-left: 60px;
+  text-transform: uppercase;
+  padding-left: 59px;
   padding-right: 60px;
-  margin-bottom: 30px;
+  margin-bottom: 14px;
 }
 .modal__caption {
   .fonts-regular();
   .paragraph();
-  font-size: 15px;
+  font-size: 16px;
   line-height: 30px;
   color: #444444;
   text-align: center;
@@ -25,6 +29,8 @@
   color: #ffffff;
   background: #63d1bb;
   border: none;
+  padding-top: 18px;
+  padding-bottom: 16px;
 }
 
 @media @tablet-widths {
@@ -40,12 +46,14 @@
     font-size: 30px;
     line-height: 57px;
     text-align: center;
+    padding: 0;
+    margin-top: 33px;
   }
   .modal__caption {
     font-size: 17px;
   }
   .modal__btn {
     width: 352px;
-    margin-left: 85px;
+    margin-left: 58px;
   }
 }

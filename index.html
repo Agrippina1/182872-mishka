@@ -9,14 +9,14 @@
   <body>
     <header class="page-header">
       <h1 class="visually-hidden">Мишка - вязание на заказ</h1>
-      <nav class="main-nav  main-nav--nojs">
+      <nav class="main-nav  main-nav--closed  main-nav--nojs">
         <div class="main-nav__wrapper">
           <ul class="main-nav__items">
-            <li class="main-nav__item  main-nav__item--logo">
+            <li class="main-nav__item  main-nav__item--logo main-nav__item--active">
               <a class="page-header__logo">
                 <img src="img/logo-mobile.svg" width="86" height="35" alt="Mishka">
+                <button class="main-nav__toggle" type="button">Открыть меню</button>
               </a>
-              <button class="page-header__button  page-header__button--close" type="button">Открыть меню</button>
             </li>
             <li class="main-nav__item  main-nav__item--catalog">
               <a href="catalog.html">Каталог товаров</a>
@@ -106,7 +106,7 @@
           <li class="comments__item  slider__item">
             <p class="comments__comment">Я молодая мама, но все равно фотографии не набирали и
             близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила
-            аксессуаров и игрушек в Мишке и мои фотографии сразу стали более стильнее, а так же
+            аксессуаров и игрушек в Мишке и&nbsp;мои фотографии сразу стали более стильнее, а так же
             набирают больше лайков!</p>
             <p class="comments__signature">Анастасия Красильникова</p>
             <p class="comments__email">@misssssiskras</p>
@@ -172,5 +172,23 @@
       </div>
       <button class="btn  modal__btn">Добавить</button>
     </div>
+
+    <script>
+    var navMain = document.querySelector('.main-nav');
+    var navToggle = document.querySelector('.main-nav__toggle');
+
+    navMain.classList.remove('main-nav--nojs');
+
+    navToggle.addEventListener('click', function() {
+      if (navMain.classList.contains('main-nav--closed')) {
+        navMain.classList.remove('main-nav--closed');
+        navMain.classList.add('main-nav--opened');
+      } else {
+        navMain.classList.add('main-nav--closed');
+        navMain.classList.remove('main-nav--opened');
+      }
+    });
+  </script>
+
   </body>
 </html>

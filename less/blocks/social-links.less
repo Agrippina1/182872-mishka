@@ -1,11 +1,35 @@
 .social__links {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  margin-left: 38px;
+  margin-right: 44px;
 }
 .social__link {
   width: 28px;
   height: 28px;
   font-size: 0;
-  margin-right: 40px;
+  margin: auto;
   background: yellow;
+}
+
+@media @tablet-widths {
+  .social__links {
+    width: 171px;
+    margin-left: 49px;
+  }
+  .social__link {
+    width: 28px;
+    height: 28px;
+    font-size: 0;
+    margin-right: 40px;
+    margin-right: 2px;
+    background: yellow;
+  }
+}
+
+@media @desktop-widths {
+  .social__links {
+    margin-left: 31px;
+    margin-right: 13px;
+  }
 }

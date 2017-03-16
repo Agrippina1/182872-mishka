@@ -1,10 +1,9 @@
 .modal-size {
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
   margin-bottom: 30px;
 }
 .modal-size__btn {
-  display: inline-block;
-  vertical-align: top;
   border: none;
   outline: none;
   .fonts-bold();
@@ -16,5 +15,15 @@
   background: #ffffff;
   cursor: pointer;
   padding-top: 17px;
-  padding-bottom: 17px;
+  padding-bottom: 15px;
+}
+
+@media @tablet-widths {
+  .modal-size {
+    margin-left: 58px;
+    margin-right: 58px;
+  }
+  .modal-size__btn {
+    width: 112px;
+  }
 }

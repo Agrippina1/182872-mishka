@@ -4,8 +4,8 @@
   font-size: 18px;
   line-height: 30px;
   color: #000000;
-  padding-top: 45px;
-  margin-bottom: 40px;
+  padding-top: 41px;
+  margin-bottom: 27px;
 }
 .contacts span {
   .paragraph();
@@ -13,22 +13,45 @@
   font-size: 15px;
   line-height: 30px;
   color: #444444;
+  margin-right: 30px;
 }
 .contacts__wrapper {
   .container-padding();
   padding-bottom: 45px;
+}
+.contacts__email {
+  margin-bottom: 30px;
+}
+.contacts__email a {
+  font-size: 15px;
+  color: #444444;
+  text-decoration: none;
+  border-bottom: 1px solid #62d1ba;
+  padding-bottom: 3px;
+  &:hover {
+    color: #46c1ae;
+  }
+  &:active {
+    color: rgba(70, 193, 174, 0.3);
+    border-bottom: 1px solid rgba(70, 193, 174, 0.3);
+  }
+}
+.contacts__address {
+  display: flex;
+  margin-bottom: -9px;
 }
 .contacts__map {
   width: 100%;
   height: 457px;
   background: url("../img/map-mobile@1x.jpg") 100% 100% no-repeat;
   background-size: 100%;
-  margin-bottom: 35px;
+  margin-bottom: 39px;
 }
 .contacts__btn--wrapper {
   .container-padding();
 }
 .contacts__btn {
+  font-size: 18px;
   width: 256px;
 }
 
@@ -37,14 +60,22 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-bottom: 55px;
   }
   .contacts__wrapper p {
     .paragraph();
     padding-right: 50px;
   }
+  .contacts span,
+  .contacts a {
+    font-size: 17px;
+  }
   .contacts__btn--wrapper {
     text-align: center;
-    margin-bottom: 55px;
+    margin-bottom: 56px;
+  }
+  .contacts__wrapper p {
+    padding-right: 0;
   }
   .contacts__title {
     width: 100%;
@@ -52,13 +83,18 @@
     line-height: 50px;
     padding: 0;
     margin: 0;
+    margin-left: -5px;
+    margin-bottom: 50px;
   }
   .contacts__address-street {
     display: inline-block;
     vertical-align: top;
   }
+  .contacts__map {
+    margin-bottom: 55px;
+  }
   .contacts__btn {
-    width: 230px;
+    width: 227px;
   }
 }
 
@@ -73,22 +109,37 @@
     display: block;
     width: 300px;
     padding-left: 175px;
+    margin-top: 70px;
   }
   .contacts__title {
     font-size: 53px;
     line-height: 57px;
-    margin-bottom: 130px;
+    margin-bottom: 155px;
   }
   .contacts__wrapper p {
     margin-top: -105px;
-    margin-bottom: 120px;
+    margin-bottom: 135px;
+  }
+  .contacts__address {
+    display: flex;
+  }
+  .contacts span {
+    margin-right: 0;
+  }
+  .contacts__email span {
+    margin-right: 23px;
+  }
+  .contacts__address-street:first-child {
+    margin-right: 26px;
   }
   .contacts__map {
     width: 525px;
     height: 457px;
+    margin-bottom: 0;
   }
   .contacts__btn--wrapper {
     text-align: left;
-    margin-top: -85px;
+    margin-top: -112px;
+    margin-left: 124px;
   }
 }

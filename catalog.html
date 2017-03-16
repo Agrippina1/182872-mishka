@@ -9,17 +9,17 @@
   <body>
     <header class="page-header">
       <h1 class="visually-hidden">Мишка - вязание на заказ</h1>
-      <nav class="main-nav  main-nav--nojs">
+      <nav class="main-nav  main-nav--closed  main-nav--nojs">
         <div class="main-nav__wrapper">
           <ul class="main-nav__items">
-            <li class="main-nav__item  main-nav__item--logo">
-              <a class="page-header__logo"  href="index.html">
+            <li class="main-nav__item  main-nav__item--logo main-nav__item--active">
+              <a class="page-header__logo" href="index.html">
                 <img src="img/logo-mobile.svg" width="86" height="35" alt="Mishka">
+                <button class="main-nav__toggle" type="button">Открыть меню</button>
               </a>
-              <button class="page-header__button  page-header__button--close" type="button">Открыть меню</button>
             </li>
             <li class="main-nav__item  main-nav__item--catalog">
-              <a>Каталог товаров</a>
+              <a href="catalog.html">Каталог товаров</a>
             </li>
             <li class="main-nav__item  main-nav__item--to-order">
               <a href="#">Вязание на заказ</a>
@@ -56,7 +56,7 @@
             <img  class="catalog__img" src="img/photo-1-mobile@1x.jpg" width="260" height="195" alt="Фото зайчика">
           </a>
           <div class="catalog-text__wrapper">
-            <a class="catalog__text">
+            <a class="catalog__text"  href="bunny.html">
               <h4>Зайчик-попрыгайчик</h4>
               <p>Рост 30 см, вес 200 г</p>
             </a>
@@ -71,7 +71,7 @@
             <img  class="catalog__img" src="img/photo-2-mobile@1x.jpg" width="260" height="195" alt="Фото корзинки">
           </a>
           <div class="catalog-text__wrapper">
-            <a class="catalog__text">
+            <a class="catalog__text"  href="box-for-linen.html">
               <h4>Корзинка для белья</h4>
               <p>Диаметр 15 см, высота 10 см</p>
             </a>
@@ -86,7 +86,7 @@
             <img  class="catalog__img" src="img/photo-3-mobile@1x.jpg" width="260" height="195" alt="Фото корзинки для игрушек">
           </a>
           <div class="catalog-text__wrapper">
-            <a class="catalog__text">
+            <a class="catalog__text"  href="box-for-toys">
               <h4>Большая корзинка для игрушек</h4>
               <p>Диаметр 30 см, высота 30 см</p>
             </a>
@@ -109,8 +109,9 @@
         </div>
       </div>
     </section>
-    <footer class="page-footer container">
+    <footer class="page-footer">
       <div class="page-footer__wrapper">
+        <img  class="page-footer__logo"  src="img/logo-footer-tablet.png" width="102" height="34" alt="logo">
         <p class="page-footer__social">
           <span class="social__links">
             <a class="social__link  social__link--inst" href="https://www.instagram.com/htmlacadem">Мы в Инстаграмм</a>
