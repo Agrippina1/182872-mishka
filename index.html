@@ -83,7 +83,7 @@
       </div>
       <div class="product__price-wrap">
         <p class="product__price">Цена: 990 руб.</p>
-        <a class="btn  product__btn" href="form.html">Заказать</a>
+        <a class="btn  product__btn" href="product.html">Заказать</a>
       </div>
     </section>
     <section class="advantages">
@@ -152,12 +152,10 @@
             <a class="social__link  social__link--tw" href="https://www.twitter.com/htmlacadem">Мы в Твиттере</a>
           </span>
         </p>
-        <p class="page-footer__copyright">
+        <a class="page-footer__copyright"  href="https://htmlacademy.ru/">
           <span>Разработано</span>
-          <a href="https://htmlacademy.ru/">
-            <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="https://htmlacademy.ru/">
-          </a>
-        </p>
+          <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="https://htmlacademy.ru/">
+        </a>
       </div>
     </footer>
     <div class="modal">
@@ -166,29 +164,13 @@
         <p class="modal__caption">Выберите размер</p>
       </div>
       <div class="modal-size">
-        <button class="modal-size__btn" type="button">S</button>
+        <button class="modal-size__btn  modal-size__btn--active" type="button">S</button>
         <button class="modal-size__btn" type="button">M</button>
         <button class="modal-size__btn" type="button">L</button>
       </div>
       <button class="btn  modal__btn">Добавить</button>
     </div>
-
-    <script>
-    var navMain = document.querySelector('.main-nav');
-    var navToggle = document.querySelector('.main-nav__toggle');
-
-    navMain.classList.remove('main-nav--nojs');
-
-    navToggle.addEventListener('click', function() {
-      if (navMain.classList.contains('main-nav--closed')) {
-        navMain.classList.remove('main-nav--closed');
-        navMain.classList.add('main-nav--opened');
-      } else {
-        navMain.classList.add('main-nav--closed');
-        navMain.classList.remove('main-nav--opened');
-      }
-    });
-  </script>
-
+    <div class="modal__overlay"></div>
+    <script src="js/popup.js"></script>
   </body>
 </html>

@@ -1,6 +1,12 @@
+.form {
+  position: relative;
+  top: 80px;
+  z-index: -1;
+  margin-bottom: 80px;
+}
 .form-field {
   .container-padding();
-  margin-bottom: 55px;
+  margin-bottom: 135px;
 }
 .form-field__wrapper {
   .list();
@@ -26,6 +32,9 @@
   border-bottom: 1px solid #63d1bb;;
   top: -10px;
   z-index: 1;
+}
+.form-field__input {
+  outline: none;
 }
 .form-field__input--radio,
 .form-field__input--checkbox {
@@ -63,6 +72,12 @@
   left: 12px;
   background: #62d1ba;
 }
+.form-field__label--radio:hover::before {
+  border-color: #62d1ba;
+}
+.form-field__label--radio:active::before {
+  border-color: rgba(68, 68, 68, 0.3);
+}
 .form-field__input--checkbox + .form-field__label--checkbox::before {
   content: "";
   position: absolute;
@@ -81,6 +96,12 @@
   top: -3px;
   left: 4px;
   background: url("../img/icon-tick.svg") no-repeat;
+}
+.form-field__label--checkbox:hover::before {
+  border-color: #62d1ba;
+}
+.form-field__label--checkbox:active::before {
+  border-color: rgba(68, 68, 68, 0.3);
 }
 .form-field__input--checkbox + .form-field__label--checkbox {
   margin-bottom: 43px;
@@ -119,12 +140,20 @@
   padding-top: 16px;
   padding-bottom: 16px;
   margin-bottom: -4px;
+  &:hover {
+    border-color: #62d1ba;
+  }
+  &:active {
+    border-color: #62d1ba;
+  }
 }
 .form-field__input--phone {
+  background: url("../img/icon-phone.svg") no-repeat 230px;
   padding-top: 21px;
   padding-bottom: 15px;
 }
 .form-field__input--email {
+  background: url("../img/icon-mail.svg") no-repeat 225px;
   padding-top: 20px;
 }
 .form-field__container--phone,
@@ -143,12 +172,43 @@
   color: #444444;
   width: 166px;
   min-height: 121px;
+  outline: none;
   border: 2px solid #444444;
   padding-top: 15px;
   padding-left: 15px;
   padding-right: 75px;
   margin-top: 22px;
   margin-bottom: 10px;
+  &:hover {
+    border-color: #62d1ba;
+  }
+  &:active {
+    border-color: #62d1ba;
+  }
+}
+.form-field__input::-webkit-input-placeholder {
+	color:#000000;
+	opacity: 0.3;
+}
+.form-field__input::-moz-placeholder {
+	color:#000000;
+	opacity: 0.3;
+}
+.form-field__input:-moz-placeholder {
+	color:#000000;
+	opacity: 0.3;
+}
+.form-field__input:-ms-input-placeholder {
+	color:#000000;
+	opacity: 0.3;
+}
+.form-field__input:focus {
+  color: #000000;
+  border-bottom-color: #62d1ba;
+}
+.form-field__textarea:focus {
+  color: #000000;
+  border-color: #62d1ba;
 }
 .form__footnote {
   margin: 0;
@@ -164,6 +224,8 @@
 
 @media @tablet-widths {
   .form {
+    position: static;
+    border-top: 1px solid #e7e7e7;
     margin-top: -46px;
   }
   .form-field {
@@ -174,9 +236,6 @@
   .form-field__background-wrapper {
     .container-padding();
     display: flex;
-  }
-  .form-field__input {
-    outline: none;
   }
   .form-field__container {
     display: flex;
@@ -272,7 +331,7 @@
   }
   .form-field__input--phone {
     width: 484px;
-    background: transparent;
+    background-position: 460px;
     padding-top: 5px;
     padding-left: 18px;
     margin-top: 60px;
@@ -287,7 +346,7 @@
   }
   .form-field__input--email {
     width: 484px;
-    background: transparent;
+    background-position: 457px;
     padding-top: 8px;
     padding-left: 17px;
     margin-top: 30px;
@@ -335,7 +394,7 @@
   .form-field__title-wrapper--color,
   .form-field__title-wrapper--phone,
   .form-field__title-wrapper--email {
-    margin-left: 60px;
+    margin-left: 57px;
   }
   .form-field__title {
     margin-right: 20px;
@@ -351,10 +410,12 @@
   }
   .form-field__input--phone {
     width: 682px;
+    background-position: 660px;
     margin-bottom: 6px;
   }
   .form-field__input--email {
     width: 682px;
+    background-position: 654px;
     padding-top: 4px;
   }
   .form-field__title--add {
@@ -368,6 +429,6 @@
     margin-right: 175px;
   }
   .form-field__btn {
-    margin-left: 175px;
+    margin-left: 171px;
   }
 }

@@ -11,11 +11,17 @@
   line-height: 16px;
   color: #444444;
   width: 80px;
-  border: 2px solid #ececec;
+  border: 2px solid rgba(68, 68, 68, 0.1);
   background: #ffffff;
   cursor: pointer;
   padding-top: 17px;
   padding-bottom: 15px;
+  &:hover {
+    border-color: rgba(68, 68, 68, 0.3)
+  }
+  &--active {
+    border-color: #63d1bb;
+  }
 }
 
 @media @tablet-widths {

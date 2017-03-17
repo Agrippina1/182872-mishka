@@ -1,8 +1,12 @@
 .assortment {
+  position: relative;
+  top: 80px;
+  z-index: -1;
   background-image: url("../img/hero-mobile@1x.jpg");
   background-color: #f9f9f9;
   background-size: 320px;
   background-repeat: no-repeat;
+  margin-bottom: 80px;
 }
 .assortment__header {
   padding-left: 30px;
@@ -32,7 +36,7 @@
   padding-bottom: 29px;
 }
 .assortment__btn--left {
-  background: #63d1bb;
+  background: #63d1bb url("../img/icon-interior.svg") no-repeat 243px 24px;
   &:hover {
     background: #59d5bc;
   }
@@ -41,7 +45,7 @@
   }
 }
 .assortment__btn--right {
-  background: #56c3b2;
+  background: #56c3b2 url("../img/icon-toy.svg") no-repeat 235px 21px;
   &:hover {
     background: #46c1ae;
   }
@@ -52,9 +56,10 @@
 
 @media @tablet-widths {
   .assortment {
+    position: static;
     background: #f9f9f9 url("../img/hero-mobile@1x.jpg") no-repeat center;
     border-top: 1px solid #e7e7e7;
-    margin-top: -46px;
+    margin-top: -42px;
     margin-bottom: 20px;
   }
   .assortment__slogan {
@@ -79,6 +84,12 @@
     padding-top: 28px;
     padding-left: 35px;
   }
+  .assortment__btn--left {
+    background-position: 276px 25px;
+  }
+  .assortment__btn--right {
+    background-position: 260px 28px;
+  }
 }
 
 @media @desktop-widths {
@@ -98,5 +109,11 @@
     padding-right: 320px;
     padding-top: 27px;
     padding-left: 38px;
+  }
+  .assortment__btn--left {
+    background-position: 470px 25px;
+  }
+  .assortment__btn--right {
+    background-position: 445px 28px;
   }
 }
