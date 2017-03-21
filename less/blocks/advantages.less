@@ -1,6 +1,6 @@
 .advantages {
   .container-padding();
-  padding-bottom: 60px;
+  padding-bottom: 32px;
 }
 .advantages__title {
   margin: 0;
@@ -9,7 +9,7 @@
   line-height: 30px;
   color: #000000;
   margin-top: 70px;
-  margin-bottom: 30px;
+  margin-bottom: 26px;
 }
 .advantages__items {
   .list();
@@ -20,13 +20,42 @@
   line-height: 20px;
   color: #000000;
   padding-top: 60px;
-  margin-bottom: 35px;
+  padding-right: 10px;
+  margin-bottom: 23px;
+}
+.advantages__item--first {
+  background: url("../img/icon-feature-1.svg") no-repeat 9px 6px;
+  padding-right: 63px;
+}
+.advantages__item--second {
+  background: url("../img/icon-feature-3.svg") no-repeat 0 7px;
+  padding-right: 60px;
+}
+.advantages__item--third {
+  background: url("../img/icon-feature-5.svg") no-repeat 8px 12px;
+  padding-right: 60px;
+}
+.advantages__item--fourth {
+  background: url("../img/icon-feature-2.svg") no-repeat 5px 9px;
+}
+.advantages__item--fifth {
+  background: url("../img/icon-feature-4.svg") no-repeat -5px 10px;
+}
+.advantages__item--sixth {
+  background: url("../img/icon-feature-6.svg") no-repeat 4px 8px;
 }
 
+
 @media @tablet-widths {
+  .advantages {
+    margin-bottom: 31px;
+  }
   .advantages__title {
+    margin: 0;
     font-size: 43px;
     line-height: 50px;
+    margin-left: -5px;
+    margin-bottom: 43px;
   }
   .advantages__items {
     display: flex;
@@ -34,16 +63,23 @@
     justify-content: space-between;
   }
   .advantages__item {
-    width: 320px;
+    font-size: 20px;
+    line-height: 22px;
+    width: 295px;
     padding-top: 60px;
-    padding-right: 14px;
-    padding-bottom: 60px;
+    padding-right: 39px;
+    padding-bottom: 28px;
+  }
+  .advantages__item--first {
+    width: 230px;
   }
   .advantages__item--third {
     order: 1;
+    width: 240px;
   }
   .advantages__item--second {
     order: 2;
+    width: 250px;
   }
   .advantages__item--fifth {
     order: 3;
@@ -58,6 +94,9 @@
 
 
 @media @desktop-widths {
+  .advantages {
+    margin-bottom: 38px;
+  }
   .advantages__title {
     font-size: 53px;
     line-height: 57px;
@@ -66,5 +105,8 @@
   .advantages__items {
     width: 700px;
     margin: 0 auto;
+  }
+  .advantages__item {
+    padding-right: 54px;
   }
 }

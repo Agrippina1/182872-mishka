@@ -1,12 +1,27 @@
 .video {
   .container-padding();
   position: relative;
+  margin-bottom: 58px;
 }
 .video__wrapper {
+  background: url("../img/icon-video.svg") no-repeat 33px 29px;
   border: 1px solid #ececec;
 }
 .video__img {
-  margin-top: 118px;
+  position: relative;
+  margin-top: 96px;
+}
+.video__play {
+  position: absolute;
+  width: 102px;
+  height: 78px;
+  top: 136px;
+  left: 110px;
+  font-size: 0;
+  border: none;
+  outline: none;
+  background: url("../img/icon-play.svg") no-repeat;
+  cursor: pointer;
 }
 .video__title {
   position: absolute;
@@ -18,7 +33,7 @@
   line-height: 24px;
   color: #000000;
   padding-left: 90px;
-  padding-top: 28px;
+  padding-top: 26px;
   padding-bottom: 25px;
 }
 .video p {
@@ -27,39 +42,54 @@
   font-size: 13px;
   line-height: 24px;
   color: #444444;
-  padding-left: 35px;
-  padding-top: 30px;
+  padding-left: 33px;
+  padding-top: 26px;
   padding-right: 45px;
-  margin-bottom: 30px;
+  margin-bottom: 23px;
 }
 .video__btn {
-  width: 190px;
-  margin-bottom: 35px;
-  margin-left: 35px;
+  width: 188px;
+  margin-bottom: 32px;
+  margin-left: 33px;
 }
 
 
 @media @tablet-widths {
   .video {
     .container-padding();
+    margin-bottom: 103px;
+  }
+  .video__wrapper {
+    background-position: 41px 488px;
   }
   .video__img {
     margin-top: 0;
     width: 668px;
     height: 455px;
   }
+  .video__play {
+    top: 196px;
+    left: 333px;
+  }
   .video__title {
     position: relative;
     font-size: 20px;
     width: 250px;
+    padding-left: 104px;
+    padding-top: 33px;
   }
   .video p {
     font-size: 15px;
     line-height: 30px;
     padding-right: 70px;
+    padding-top: 8px;
+    padding-left: 39px;
+    margin-bottom: 34px;
   }
   .video__btn {
-    width: 584px;
+    width: 580px;
+    margin-left: 41px;
+    margin-bottom: 45px;
   }
 }
 
@@ -67,18 +97,29 @@
   .video__wrapper {
     display: flex;
     justify-content: space-between;
+    background-position: 757px 50px;
   }
   .video__img {
     width: 682px;
   }
-  .video__btn {
-    width: 230px;
+  .video__play {
+    top: 189px;
+    left: 349px;
   }
   .video__title {
     width: 200px;
-    padding-top: 90px;
+    padding-top: 95px;
+    padding-left: 0;
   }
   .video p {
+    padding: 0;
     width: 240px;
+    padding-top: 9px;
+    margin-right: 49px;
+    margin-bottom: 45px;
+  }
+  .video__btn {
+    width: 228px;
+    margin: 0;
   }
 }

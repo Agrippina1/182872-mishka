@@ -1,5 +1,6 @@
 .form__header {
   background: #f1f1f1;
+  margin-bottom: 24px;
 }
 .form__title {
   .container-padding();
@@ -8,37 +9,51 @@
   line-height: 30px;
   color: #000000;
   text-align: center;
-  padding-top: 75px;
-  padding-bottom: 80px;
-  margin-bottom: 30px;
+  padding-top: 71px;
+  padding-bottom: 77px;
 }
 .form__text {
-  .container-padding();
+  width: 247px;
   .fonts-regular();
   font-size: 13px;
   line-height: 24px;
   color: #444444;
-  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 43px;
+  margin-bottom: 12px;
 }
 
 @media @tablet-widths {
+  .form__header {
+    margin-bottom: 87px;
+  }
   .form__title {
     font-size: 43px;
     line-height: 50px;
+    padding-top: 94px;
+    padding-bottom: 68px;
   }
   .form__text {
-    font-size: 17px;
+    .container-padding();
+    font-size: 18px;
     line-height: 30px;
+    margin-bottom: 64px;
   }
 }
 
 @media @desktop-widths {
+  .form__header {
+    margin-bottom: 141px;
+  }
   .form__title {
-    padding-top: 104px;
-    padding-bottom: 104px;
+    font-size: 53px;
+    line-height: 57px;
+    padding-top: 95px;
+    padding-bottom: 85px;
   }
   .form__text {
-    padding-left: 225px;
-    margin-bottom: 60px;
+    width: 700px;
+    margin-left: 272px;
+    margin-bottom: 63px;
   }
 }

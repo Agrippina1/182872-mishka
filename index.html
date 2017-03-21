@@ -9,14 +9,14 @@
   <body>
     <header class="page-header">
       <h1 class="visually-hidden">Мишка - вязание на заказ</h1>
-      <nav class="main-nav  main-nav--nojs">
+      <nav class="main-nav  main-nav--closed  main-nav--nojs">
         <div class="main-nav__wrapper">
           <ul class="main-nav__items">
-            <li class="main-nav__item  main-nav__item--logo">
+            <li class="main-nav__item  main-nav__item--logo main-nav__item--active">
               <a class="page-header__logo">
                 <img src="img/logo-mobile.svg" width="86" height="35" alt="Mishka">
               </a>
-              <button class="page-header__button  page-header__button--close" type="button">Открыть меню</button>
+              <button class="main-nav__toggle" type="button">Открыть меню</button>
             </li>
             <li class="main-nav__item  main-nav__item--catalog">
               <a href="catalog.html">Каталог товаров</a>
@@ -83,7 +83,7 @@
       </div>
       <div class="product__price-wrap">
         <p class="product__price">Цена: 990 руб.</p>
-        <a class="btn  product__btn" href="form.html">Заказать</a>
+        <a class="btn  product__btn popap-open" href="product.html">Заказать</a>
       </div>
     </section>
     <section class="advantages">
@@ -106,7 +106,7 @@
           <li class="comments__item  slider__item">
             <p class="comments__comment">Я молодая мама, но все равно фотографии не набирали и
             близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила
-            аксессуаров и игрушек в Мишке и мои фотографии сразу стали более стильнее, а так же
+            аксессуаров и игрушек в Мишке и&nbsp;мои фотографии сразу стали более стильнее, а так же
             набирают больше лайков!</p>
             <p class="comments__signature">Анастасия Красильникова</p>
             <p class="comments__email">@misssssiskras</p>
@@ -152,12 +152,10 @@
             <a class="social__link  social__link--tw" href="https://www.twitter.com/htmlacadem">Мы в Твиттере</a>
           </span>
         </p>
-        <p class="page-footer__copyright">
+        <a class="page-footer__copyright"  href="https://htmlacademy.ru/">
           <span>Разработано</span>
-          <a href="https://htmlacademy.ru/">
-            <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="https://htmlacademy.ru/">
-          </a>
-        </p>
+          <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="https://htmlacademy.ru/">
+        </a>
       </div>
     </footer>
     <div class="modal">
@@ -166,11 +164,13 @@
         <p class="modal__caption">Выберите размер</p>
       </div>
       <div class="modal-size">
-        <button class="modal-size__btn" type="button">S</button>
+        <button class="modal-size__btn  modal-size__btn--active" type="button">S</button>
         <button class="modal-size__btn" type="button">M</button>
         <button class="modal-size__btn" type="button">L</button>
       </div>
       <button class="btn  modal__btn">Добавить</button>
     </div>
+    <div class="modal__overlay"></div>
+    <script src="js/popup.js"></script>
   </body>
 </html>

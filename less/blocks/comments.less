@@ -12,6 +12,7 @@
 }
 .comments__items {
   .list();
+  padding-top: 10px;
 }
 .comments__comment,
 .comments__email {
@@ -22,28 +23,51 @@
 }
 .comments__comment {
   width: 235px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
+}
+.comments__email {
+  font-size: 17px;
+  margin-top: 6px;
+  margin-bottom: 29px;
 }
 .comments__signature {
   .paragraph();
   .fonts-bold();
-  font-size: 16px;
+  font-size: 18px;
   line-height: 18px;
   color: #000000;
 }
 .comments__button-wrapper {
   font-size: 0;
-  margin-bottom: 35px;
+  margin-bottom: 39px;
 }
 .comments__button {
   display: inline-block;
   vertical-align: top;
-  width: 128px;
+  width: 130px;
   height: 50px;
+  outline: none;
+  cursor: pointer;
   background: transparent;
   border: 1px solid #ececec;
 }
+.comments__button--prev {
+  background: url("../img/icon-left-arrow.svg") no-repeat 38px;
+  &:hover {
+    opacity: 0.6;
+  }
+  &:active {
+    opacity: 0.3;
+  }
+}
 .comments__button--next {
+  background: url("../img/icon-right-arrow.svg") no-repeat 38px;
+  &:hover {
+    opacity: 0.6;
+  }
+  &:active {
+    opacity: 0.3;
+  }
   margin-right: 0;
 }
 .comments__btn {
@@ -52,49 +76,79 @@
 
 @media @tablet-widths {
   .comments {
+    position: relative;
     background: url("../img/review@1x.jpg") no-repeat;
     padding-bottom: 70px;
-    margin-bottom: 65px;
+    margin-bottom: 73px;
   }
   .comments__title {
     font-size: 43px;
     line-height: 50px;
-    margin-top: 70px;
+    margin-top: 78px;
+    margin-left: -5px;
   }
   .comments__comment {
-    width: 500px;
+    font-size: 17px;
+    width: 620px;
     padding-top: 23px;
+    margin-bottom: 60px;
   }
   .comments__wrapper {
-    .container-padding();
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
+  .comments__items {
+    padding-top: 6px;
+  }
   .comments__btn {
     order: 1;
-    width: 177px;
-    margin-top: 70px;
+    width: 171px;
+    margin-top: 79px;
   }
   .comments__items {
     order: 2;
   }
   .comments__button-wrapper {
+    position: absolute;
+    right: 55px;
+    top: 357px;
     order: 3;
-    margin-top: 185px;
   }
   .comments__button {
     width: 82px;
   }
+  .comments__button--prev {
+    background-position: 15px;
+  }
+  .comments__button--next {
+    background-position: 15px;
+  }
 }
 
 @media @desktop-widths {
+  .comments {
+    padding-left: 0;
+    margin-left: 148px;
+    margin-bottom: 157px;
+  }
   .comments__title {
     font-size: 53px;
     line-height: 57px;
-    margin-left: 175px;
+    margin-left: 172px;
+    margin-top: 70px;
   }
   .comments__items {
     margin-left: 175px;
+  }
+  .comments__comment {
+    width: 736px;
+    margin-bottom: 41px;
+  }
+  .comments__signature {
+    font-size: 17px;
+  }
+  .comments__button-wrapper {
+    top: 308px;
   }
 }

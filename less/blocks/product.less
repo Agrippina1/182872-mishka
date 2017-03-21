@@ -2,7 +2,7 @@
   .container-padding();
 }
 .product__header {
-  padding-top: 30px;
+  padding-top: 28px;
   margin-bottom: 23px;
 }
 .product__title {
@@ -25,6 +25,7 @@
   font-size: 15px;
   line-height: 24px;
   color: #444444;
+  padding-right: 15px;
   margin-bottom: 17px;
 }
 .product__features {
@@ -56,15 +57,20 @@
   margin-top: 21px;
   margin-bottom: 25px;
 }
+.product__btn {
+  width: 255px;
+}
 
 
 @media @tablet-widths {
   .product {
     .container-padding();
+    margin-bottom: 119px;
   }
   .product__header {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 51px;
   }
   .product__title {
     font-size: 43px;
@@ -72,26 +78,39 @@
   }
   .product__tab {
     width: 80px;
-    margin-right: 28px;
     text-align: center;
+    margin-right: 23px;
+    margin-top: 11px;
   }
   .product__wrapper {
     display: flex;
     justify-content: space-between;
   }
   .product__description {
-    width: 290px;
     margin: 0;
+    font-size: 17px;
+    line-height: 30px;
+    width: 283px;
+    margin-bottom: 35px;
+    margin-top: -7px;
   }
-  .product__price {
-    text-align: left;
-    margin-left: 75px;
+  .product__property {
+    width: 92px;
   }
-  .product__btn {
-    width: 290px;
+  .product__value {
+    width: 194px;
   }
   .product__price-wrap {
-    margin-top: -120px;
+    margin-top: -131px;
+  }
+  .product__price {
+    font-size: 20px;
+    text-align: left;
+    margin-left: 75px;
+    margin-bottom: 34px;
+  }
+  .product__btn {
+    width: 286px;
   }
   .product__image {
     width: 334px;
@@ -103,13 +122,16 @@
 }
 
 @media @desktop-widths {
+  .product {
+    margin-bottom: 157px;
+  }
   .product__header {
     position: relative;
-    top: 145px;
+    top: 97px;
     display: flex;
     flex-direction: row-reverse;
     justify-content: flex-end;
-    margin-left: 60px;
+    margin-left: 43px;
   }
   .product__wrapper {
     display: flex;
@@ -119,18 +141,24 @@
     font-size: 53px;
     line-height: 57px;
   }
+  .product__tab {
+    margin-right: 47px;
+    margin-top: 16px;
+  }
   .product__description {
     padding-top: 30px;
+    margin-bottom: 48px;
   }
   .product__image {
     width: 525px;
     height: 635px;
+    margin-top: -68px;
   }
   .product__price-wrap {
     margin-left: 175px;
   }
   .product__discription-wrapper {
-    margin-top: 190px;
+    margin-top: 68px;
     margin-left: 175px;
   }
 }

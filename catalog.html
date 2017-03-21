@@ -9,14 +9,14 @@
   <body>
     <header class="page-header">
       <h1 class="visually-hidden">Мишка - вязание на заказ</h1>
-      <nav class="main-nav  main-nav--nojs">
+      <nav class="main-nav  main-nav--closed  main-nav--nojs">
         <div class="main-nav__wrapper">
           <ul class="main-nav__items">
-            <li class="main-nav__item  main-nav__item--logo">
+            <li class="main-nav__item  main-nav__item--logo main-nav__item--active">
               <a class="page-header__logo"  href="index.html">
                 <img src="img/logo-mobile.svg" width="86" height="35" alt="Mishka">
               </a>
-              <button class="page-header__button  page-header__button--close" type="button">Открыть меню</button>
+              <button class="main-nav__toggle" type="button">Открыть меню</button>
             </li>
             <li class="main-nav__item  main-nav__item--catalog">
               <a>Каталог товаров</a>
@@ -56,13 +56,13 @@
             <img  class="catalog__img" src="img/photo-1-mobile@1x.jpg" width="260" height="195" alt="Фото зайчика">
           </a>
           <div class="catalog-text__wrapper">
-            <a class="catalog__text">
+            <a class="catalog__text"  href="bunny.html">
               <h4>Зайчик-попрыгайчик</h4>
               <p>Рост 30 см, вес 200 г</p>
             </a>
             <div class="catalog__price">
               <span>1 200 руб.</span>
-              <button class="catalog__basket" type="button">Добавить в корзину</button>
+              <button class="catalog__basket  popap-open" type="button">Добавить в корзину</button>
             </div>
           </div>
         </article>
@@ -71,13 +71,13 @@
             <img  class="catalog__img" src="img/photo-2-mobile@1x.jpg" width="260" height="195" alt="Фото корзинки">
           </a>
           <div class="catalog-text__wrapper">
-            <a class="catalog__text">
+            <a class="catalog__text"  href="box-for-linen.html">
               <h4>Корзинка для белья</h4>
               <p>Диаметр 15 см, высота 10 см</p>
             </a>
             <div class="catalog__price">
               <span>690 руб.</span>
-              <button class="catalog__basket" type="button">Добавить в корзину</button>
+              <button class="catalog__basket  popap-open" type="button">Добавить в корзину</button>
             </div>
           </div>
         </article>
@@ -86,13 +86,13 @@
             <img  class="catalog__img" src="img/photo-3-mobile@1x.jpg" width="260" height="195" alt="Фото корзинки для игрушек">
           </a>
           <div class="catalog-text__wrapper">
-            <a class="catalog__text">
+            <a class="catalog__text  catalog__text--toys"  href="box-for-toys">
               <h4>Большая корзинка для игрушек</h4>
               <p>Диаметр 30 см, высота 30 см</p>
             </a>
             <div class="catalog__price">
               <span>1 500 руб.</span>
-              <button class="catalog__basket" type="button">Добавить в корзину</button>
+              <button class="catalog__basket  popap-open" type="button">Добавить в корзину</button>
             </div>
           </div>
         </article>
@@ -101,6 +101,7 @@
     <section class="video">
       <div class="video__wrapper">
         <img class="video__img"  src="img/video-mobile@1x.jpg" width="260px" height="150px" alt="video">
+        <button class="video__play">Смотреть видео</button>
         <div class="video-text__wrapper">
           <h3 class="video__title">Процесс производства</h3>
           <p>По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том,
@@ -109,8 +110,9 @@
         </div>
       </div>
     </section>
-    <footer class="page-footer container">
+    <footer class="page-footer">
       <div class="page-footer__wrapper">
+        <img  class="page-footer__logo"  src="img/logo-footer-tablet.png" width="102" height="34" alt="logo">
         <p class="page-footer__social">
           <span class="social__links">
             <a class="social__link  social__link--inst" href="https://www.instagram.com/htmlacadem">Мы в Инстаграмм</a>
@@ -118,12 +120,10 @@
             <a class="social__link  social__link--tw" href="https://www.twitter.com/htmlacadem">Мы в Твиттере</a>
           </span>
         </p>
-        <p class="page-footer__copyright">
+        <a class="page-footer__copyright"  href="https://htmlacademy.ru/">
           <span>Разработано</span>
-          <a href="https://htmlacademy.ru/">
-            <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="https://htmlacademy.ru/">
-          </a>
-        </p>
+          <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="https://htmlacademy.ru/">
+        </a>
       </div>
     </footer>
     <div class="modal">
@@ -132,11 +132,13 @@
         <p class="modal__caption">Выберите размер</p>
       </div>
       <div class="modal-size">
-        <button class="modal-size__btn" type="button">S</button>
+        <button class="modal-size__btn  modal-size__btn--active" type="button">S</button>
         <button class="modal-size__btn" type="button">M</button>
         <button class="modal-size__btn" type="button">L</button>
       </div>
       <button class="btn  modal__btn">Добавить</button>
     </div>
+    <div class="modal__overlay"></div>
+    <script src="js/popup.js"></script>
   </body>
 </html>

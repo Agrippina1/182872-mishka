@@ -1,10 +1,9 @@
 .modal-size {
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
   margin-bottom: 30px;
 }
 .modal-size__btn {
-  display: inline-block;
-  vertical-align: top;
   border: none;
   outline: none;
   .fonts-bold();
@@ -12,9 +11,25 @@
   line-height: 16px;
   color: #444444;
   width: 80px;
-  border: 2px solid #ececec;
+  border: 2px solid rgba(68, 68, 68, 0.1);
   background: #ffffff;
   cursor: pointer;
   padding-top: 17px;
-  padding-bottom: 17px;
+  padding-bottom: 15px;
+  &:hover {
+    border-color: rgba(68, 68, 68, 0.3)
+  }
+  &--active {
+    border-color: #63d1bb;
+  }
+}
+
+@media @tablet-widths {
+  .modal-size {
+    margin-left: 58px;
+    margin-right: 58px;
+  }
+  .modal-size__btn {
+    width: 112px;
+  }
 }
