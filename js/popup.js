@@ -14,8 +14,7 @@ navToggle.addEventListener('click', function() {
 });
 
 
-var link = document.querySelector(".product__btn");
-var linkSecond = document.querySelector(".catalog__basket");
+var link = document.querySelector(".popap-open");
 var popup = document.querySelector(".modal");
 var overlay = document.querySelector(".modal__overlay");
 var close = popup.querySelector(".modal__btn");
@@ -23,49 +22,18 @@ var close = popup.querySelector(".modal__btn");
 link.addEventListener("click", function(event) {
   event.preventDefault();
   popup.classList.add("modal--show");
-  overlay.classList.add("modal--overlay-show");
-});
-linkSecond.addEventListener("click", function(event) {
-  event.preventDefault();
-  popup.classList.add("modal--show");
-  overlay.classList.add("modal--overlay-show");
+  overlay.classList.add("modal__overlay--show");
 });
 close.addEventListener("click", function(event) {
   event.preventDefault();
   popup.classList.remove("modal--show");
-  overlay.classList.remove("modal--overlay-show");
+  overlay.classList.remove("modal__overlay--show");
 });
 window.addEventListener("keydown", function(event) {
 if (event.keyCode === 27) {
   if (popup.classList.contains("modal--show")) {
     popup.classList.remove("modal--show");
-    overlay.classList.remove("modal--overlay-show");
+    overlay.classList.remove("modal__overlay--show");
   }
 }
 });
-
-
-
-// var addBasket = document.querySelector(".catalog__basket");
-// var popup = document.querySelector(".modal");
-// var overlay = document.querySelector(".modal__overlay");
-// var close = popup.querySelector(".modal__btn");
-//
-// link.addEventListener("click", function(event) {
-//   event.preventDefault();
-//   popup.classList.add("modal__show");
-//   overlay.classList.add("modal__overlay-show");
-// });
-// close.addEventListener("click", function(event) {
-//   event.preventDefault();
-//   popup.classList.remove("modal__show");
-//   overlay.classList.remove("modal__overlay-show");
-// });
-// window.addEventListener("keydown", function(event) {
-// if (event.keyCode === 27) {
-//   if (popup.classList.contains("modal__show")) {
-//     popup.classList.remove("modal__show");
-//     overlay.classList.remove("modal__overlay-show");
-//   }
-// }
-// });

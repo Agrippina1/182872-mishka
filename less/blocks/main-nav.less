@@ -1,5 +1,5 @@
 .main-nav {
-  position: absolute;
+  position: relative;
   min-width: 320px;
   min-height: 79px;
   background: #ffffff;
@@ -57,8 +57,8 @@
 }
 .main-nav__toggle {
   position: absolute;
-  top: 17px;
-  right: 16px;
+  top: 27px;
+  right: 28px;
   z-index: 2;
   display: block;
   width: 25px;
@@ -67,13 +67,14 @@
   border: none;
   outline: none;
   background: transparent;
+  cursor: pointer;
   margin-left: 67px;
 }
 .main-nav--closed .main-nav__toggle::before {
   content: "";
   position: absolute;
-  top: 15px;
-  right: 15px;
+  top: 5px;
+  right: 3px;
   width: 20px;
   height: 2px;
   background-color: #000000;
@@ -81,14 +82,14 @@
               0 12px 0 0 #000000;
 }
 .main-nav--opened .main-nav__toggle {
-  top: 10px;
-  right: 57px;
+  top: 27px;
+  right: 29px;
   &::before,
   &::after {
     content: "";
     position: absolute;
-    top: 28px;
-    left: 28px;
+    top: 11px;
+    left: 0;
     width: 28px;
     height: 2px;
     background-color: #000000;
