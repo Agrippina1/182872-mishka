@@ -36,7 +36,10 @@
   padding-bottom: 29px;
 }
 .assortment__btn--left {
-  background: #63d1bb url("../img/icon-interior.svg") no-repeat 243px 24px;
+  background-color: #63d1bb;
+  background-image: url("../img/icon-interior.svg");
+  background-repeat: no-repeat;
+  background-position: 243px 24px;
   &:hover {
     background: #59d5bc;
   }
@@ -45,7 +48,10 @@
   }
 }
 .assortment__btn--right {
-  background: #56c3b2 url("../img/icon-toy.svg") no-repeat 235px 21px;
+  background-color: #56c3b2;
+  background-image: url("../img/icon-toy.svg");
+  background-repeat: no-repeat;
+  background-position: 235px 21px;
   &:hover {
     background: #46c1ae;
   }
@@ -56,16 +62,29 @@
 
 @media @tablet-widths {
   .assortment {
+    position: relative;
     background-color: #f9f9f9;
     background-image: url("../img/hero-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-position: center;
     border-top: 1px solid #e7e7e7;
+    z-index: 2;
     margin-top: -42px;
     margin-bottom: 47px;
     @media @retina {
       background-image: url("../img/hero-desktop@2x.jpg");
       background-size: 1150px auto;
+    }
+    .assortment::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 12px;
+      background: url("../img/bg-zigzag-fill.svg") repeat-x 0 0;
+      background-size: auto 23px;
+      z-index: 3;
     }
   }
   .assortment__slogan {
