@@ -1,6 +1,8 @@
 .comments {
-  .container-padding();
   padding-bottom: 45px;
+}
+.comments__wrapper {
+  .container-padding();
 }
 .comments__title {
   margin: 0;
@@ -79,7 +81,11 @@
     position: relative;
     background: url("../img/review@1x.jpg") no-repeat;
     padding-bottom: 70px;
-    margin-bottom: 73px;
+    margin-bottom: 13px;
+    @media @retina {
+      background-image: url("../img/review@2x.jpg");
+      background-size: 350px auto;
+    }
   }
   .comments__title {
     font-size: 43px;
