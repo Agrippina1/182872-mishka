@@ -1,8 +1,6 @@
-.comments {
-  padding-bottom: 45px;
-}
 .comments__wrapper {
   .container-padding();
+  padding-bottom: 45px;
 }
 .comments__title {
   margin: 0;
@@ -81,8 +79,8 @@
     position: relative;
     background: url("../img/review@1x.jpg") no-repeat;
     padding-bottom: 70px;
-    margin-bottom: 13px;
-    @media @retina {
+    margin-bottom: 16px;
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("../img/review@2x.jpg");
       background-size: 350px auto;
     }
@@ -134,9 +132,9 @@
 
 @media @desktop-widths {
   .comments {
+    background-position: 70px 0;
     padding-left: 0;
-    margin-left: 148px;
-    margin-bottom: 157px;
+    margin-bottom: 63px;
   }
   .comments__title {
     font-size: 53px;
