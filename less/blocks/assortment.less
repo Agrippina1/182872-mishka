@@ -25,41 +25,56 @@
   margin-left: 8px;
 }
 .assortment__btn {
-  display: block;
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  &:hover {
+    margin-top: -5px;
+  }
+}
+.assortment__btn-title {
+  .paragraph();
   .fonts-bold();
   font-size: 19px;
   line-height: 24px;
   color: #ffffff;
-  text-decoration: none;
+  width: 165px;
   padding-left: 28px;
-  padding-right: 135px;
   padding-top: 26px;
   padding-bottom: 29px;
-}
-.assortment__btn--left {
-  background-color: #63d1bb;
-  background-image: url("../img/icon-interior.svg");
-  background-repeat: no-repeat;
-  background-position: 243px 24px;
-  &:hover {
-    background: #59d5bc;
-  }
   &:active {
     color: rgba(255, 255, 255, 0.3);
+  }
+}
+.assortment__btn--left svg {
+  padding-right: 36px;
+  padding-top: 23px;
+}
+.assortment__btn--right svg {
+   padding-right: 26px;
+   padding-top: 20px;
+ }
+ .assortment__btn svg {
+   &:hover {
+    opacity: 0.7;
+   }
+   &:active {
+     opacity: 0.3;
+   }
+ }
+.assortment__btn--left {
+  background-color: #63d1bb;
+  &:hover {
+    background: #59d5bc;
   }
 }
 .assortment__btn--right {
   background-color: #56c3b2;
-  background-image: url("../img/icon-toy.svg");
-  background-repeat: no-repeat;
-  background-position: 235px 21px;
   &:hover {
     background: #46c1ae;
   }
-  &:active {
-    color: rgba(255, 255, 255, 0.3);
-  }
 }
+
 
 @media @tablet-widths {
   .assortment {
@@ -84,9 +99,10 @@
   .assortment__header {
     position: relative;
     z-index: 1;
+    height: 743px;
     background-image: url("../img/hero-desktop@1x.jpg");
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center center;
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("../img/hero-desktop@2x.jpg");
       background-size: 1150px auto;
@@ -98,34 +114,37 @@
     width: 500px;
     margin: auto;
     padding-top: 153px;
-    padding-bottom: 25px;
   }
   .assortment-wrapper {
+    position: relative;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     width: 668px;
-    margin-top: 348px;
+    z-index: 2;
+    margin-top: -115px;
   }
   .assortment__btn {
+    width: 50%;
+  }
+  .assortment__btn-title {
     font-size: 20px;
     line-height: 30px;
-    width: 264px;
     padding-top: 28px;
     padding-left: 35px;
   }
-  .assortment__btn--left {
-    background-position: 258px 30px;
+  .assortment__btn--left svg {
+    padding-top: 30px;
   }
-  .assortment__btn--right {
-    background-position: 240px 31px;
+  .assortment__btn--right svg {
+    padding-right: 34px;
+    padding-top: 31px;
   }
 }
 
 @media @desktop-widths {
   .assortment {
     background-position: 50% 82%;
-    background-size: cover;
     margin-bottom: 0;
   }
   .assortment__slogan {
@@ -135,17 +154,12 @@
   }
   .assortment-wrapper {
     width: 1050px;
-    margin-top: 335px;
   }
   .assortment__btn {
-    padding-right: 320px;
-    padding-top: 27px;
-    padding-left: 38px;
+    padding-left: 3px;
   }
-  .assortment__btn--left {
-    background-position: 470px 25px;
-  }
-  .assortment__btn--right {
-    background-position: 445px 28px;
+  .assortment::after {
+    height: 15px;
+    background-size: auto 34px;
   }
 }
