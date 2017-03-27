@@ -1,4 +1,9 @@
 .product {
+  background: url("../img/bg-zigzag-line.svg") repeat-x bottom;
+  background-size: auto 7px;
+  padding-bottom: 42px;
+}
+.product-wrap {
   .container-padding();
 }
 .product__header {
@@ -49,10 +54,15 @@
 .product__value {
   width: 160px;
 }
+.product__image {
+  width: 260px;
+  height: 315px;
+}
 .product__price {
   .fonts-bold();
   font-size: 17px;
-  line-height: 24px;color: #444444;
+  line-height: 24px;
+  color: #444444;
   text-align: center;
   margin-top: 21px;
   margin-bottom: 25px;
@@ -64,8 +74,13 @@
 
 @media @tablet-widths {
   .product {
+    background-size: auto 17px;
+    padding-bottom: 68px;
+    margin-bottom: 50px;
+  }
+  .product-wrap {
     .container-padding();
-    margin-bottom: 119px;
+    padding-bottom: 67px;
   }
   .product__header {
     display: flex;
@@ -106,8 +121,9 @@
   .product__price {
     font-size: 20px;
     text-align: left;
-    margin-left: 75px;
+    margin-left: 76px;
     margin-bottom: 34px;
+    margin-top: 18px;
   }
   .product__btn {
     width: 286px;
@@ -123,7 +139,9 @@
 
 @media @desktop-widths {
   .product {
-    margin-bottom: 157px;
+    background-size: auto 23px;
+    padding-bottom: 96px;
+    margin-bottom: 60px;
   }
   .product__header {
     position: relative;

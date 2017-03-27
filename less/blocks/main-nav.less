@@ -3,6 +3,7 @@
   min-width: 320px;
   min-height: 79px;
   background: #ffffff;
+  z-index: 3;
 }
 .main-nav__items {
   .paragraph();
@@ -36,7 +37,7 @@
     opacity: 0.6;
   }
   &:active {
-    color: rgba(0, 0, 0, 0.3);
+    opacity: 0.3;
   }
 }
 .main-nav__item--search {
@@ -48,9 +49,24 @@
   outline: none;
   background: url("../img/icon-search.svg") no-repeat 31px 3px;
   padding-left: 75px;
+  &:hover {
+    background: url("../img/icon-search-hover.svg") no-repeat 32px 43px;
+  }
+  &:active {
+    background: url("../img/icon-search-active.svg") no-repeat 32px 43px;
+  }
+  &:focus {
+    background: #ffffff;
+  }
 }
 .main-nav__item--basket {
   background: url("../img/icon-cart.svg") no-repeat 31px;
+  &:hover {
+    background: url("../img/icon-cart-hover.svg") no-repeat 19px 2px;
+  }
+  &:active {
+    background: url("../img/icon-cart-active.svg") no-repeat 19px 2px;
+  }
 }
 .main-nav__item--hidden {
   display: none;
@@ -135,8 +151,8 @@
 
 @media @tablet-widths {
   .main-nav {
-    position: static;
     .container-padding();
+    background: transparent;
   }
   .main-nav__toggle {
     display: none;
@@ -157,24 +173,24 @@
     padding-left: 0;
   }
   .main-nav__item--logo {
-    width: 120px;
     order: -5;
     padding-left: 0;
-    margin-top: 30px;
-    margin-right: 188px;
+    margin-top: 28px;
+    margin-right: 194px;
+    margin-left: -3px;
   }
   .main-nav__item--search {
     width: 82px;
     order: -4;
   }
   .main-nav__item-search-input {
-    width: 82px;
+    width: 85px;
     min-height: 90px;
     border: none;
     outline: none;
     border-left: 1px solid #ececec;
     border-right: 1px solid #ececec;
-    background-position: 30px 43px;
+    background-position: 32px 43px;
     padding-left: 5px;
   }
   .main-nav__item-search-input::-webkit-input-placeholder {
@@ -192,7 +208,7 @@
   .main-nav__item--basket {
     width: 252px;
     order: -3;
-    background-position: 13px 2px;
+    background-position: 19px 2px;
     margin-top: 38px;
   }
   .main-nav__item--basket a {
@@ -230,16 +246,18 @@
     border-right: 1px solid #ececec;
     padding-right: 35px;
     padding-top: 37px;
+    margin-right: 0;
   }
   .main-nav__item--to-order {
     order: -6;
-    margin-right: 91px;
-    margin-left: 23px;
+    margin-right: 64px;
+    margin-left: 19px;
     margin-top: 37px;
   }
   .main-nav__item--logo {
     order: -5;
-    margin-right: 89px;
+    margin-right: 85px;
+    margin-top: 15px;
   }
   .main-nav__item--search {
     order: -4;

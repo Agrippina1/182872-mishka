@@ -1,4 +1,4 @@
-.comments {
+.comments__wrapper {
   .container-padding();
   padding-bottom: 45px;
 }
@@ -79,7 +79,11 @@
     position: relative;
     background: url("../img/review@1x.jpg") no-repeat;
     padding-bottom: 70px;
-    margin-bottom: 73px;
+    margin-bottom: 16px;
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/review@2x.jpg");
+      background-size: 350px auto;
+    }
   }
   .comments__title {
     font-size: 43px;
@@ -111,15 +115,16 @@
   }
   .comments__button-wrapper {
     position: absolute;
-    right: 55px;
+    right: 143px;
     top: 357px;
     order: 3;
   }
   .comments__button {
     width: 82px;
+    border: none;
   }
   .comments__button--prev {
-    background-position: 15px;
+    background-position: 10px;
   }
   .comments__button--next {
     background-position: 15px;
@@ -128,9 +133,9 @@
 
 @media @desktop-widths {
   .comments {
+    background-position: 148px 0;
     padding-left: 0;
-    margin-left: 148px;
-    margin-bottom: 157px;
+    margin-bottom: 63px;
   }
   .comments__title {
     font-size: 53px;
