@@ -101,7 +101,7 @@ module.exports = function(grunt) {
         files: ["less/**/*.less"],
         tasks: ["less", "postcss", "csso"]
       }
-    },
+    }
 
   });
 
