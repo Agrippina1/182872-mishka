@@ -1,12 +1,14 @@
 .modal {
   position: fixed;
   display: none;
-  bottom: 20px;
   .container-padding();
   z-index: 25;
   box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
   border-top: 1px solid #c6c6c6;
   background: #ffffff;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   padding-top: 30px;
   padding-bottom: 45px;
 }
@@ -65,7 +67,6 @@
     left: 50%;
     border: 1px solid #c7c7c7;
     margin-bottom: 50px;
-    margin-left: -283px;
   }
   .modal__title {
     font-size: 30px;
