@@ -17,10 +17,7 @@ module.exports = function(grunt) {
       style: {
         options: {
           processors: [
-            require("autoprefixer")({browsers: [ "last 2 versions" ]}),
-            require("css-mqpacker")({
-              sort: true
-            })
+            require("autoprefixer")({browsers: [ "last 2 versions" ]})
           ]
         },
         src: "build/css/*.css"
@@ -87,11 +84,7 @@ module.exports = function(grunt) {
         },
         options: {
           server: "build/",
-          watchTask: true,
-          // notify: false,
-          // open: true,
-          // cors: true,
-          // ui: false
+          watchTask: true
         }
       }
     },
